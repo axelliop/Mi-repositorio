@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiCofii-Contacto</title>
+    <link rel="shortcut icon" href="../img/cafee.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<header id="header">
+  <div class="logo">
+    <a href="../index.html"><img src="../img/logo cafee.png" alt="Logo cafe" width="60px" height="60px"></a>
+  </div>
+  <nav class="menu">
+  <ul>
+      <li><a href="./inicio.html">Inicio</a></li>
+      <li><a href="./nosotros.html">Nosotros</a></li>
+      <li><a href="./cafes.html">Cafes</a></li>
+    <li><a href="./contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+      
+      </header>
+    <hr>
+<body>
+    <main>
+  <h1>Nos interesa saber sobre vos!</h1>
+<section>
+<form action="enviar.php" method="get" enctype="text/plain">
+
+    <div> 
+        <label for="Nombre">Nombre:</label>
+        <input type="text" id="Nombre" placeholder="Ingrese su nombre"> <!-- Recibir informacion -->
+    </div>
+    <br>
+    <div>
+        <label for="Apellido">Apellido</label>
+        <input type="text" id="Apellido" placeholder="Apellido">
+        <br>
+        <br>
+    <div>
+        <label for="email">Email</label> 
+        <input type="text" id="email" placeholder="Email">
+    </div>
+    <br>
+    <div>
+        <label for="date">Fecha de nacimiento</label>
+        <input type="date" id="date">
+    </div>
+    <br>
+    <div>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="5" placeholder="Que opinas de nosotros?"></textarea>
+    
+    </div>
+    <br>
+    <label for="">Estado civil?</label>
+    <input type="radio" name="civil" value="2"> Soltero
+    <input type="radio" name="civil" value="3"> Viudo
+    <input type="radio" name="civil" value="1"> Casado
+    <br>
+    <div><!-- Checkbox es para tildar opciones, mas de 1-->
+        <label for="">Acepto ter. y Cond.</label>
+        <input type="checkbox" id="acepto">
+        <label for="news" id="news">News.</label>
+        <input type="checkbox" id="news">
+    </div>
+    <br>
+    <input type="submit" value="Enviar ahora"> 
+    <input type="reset" value="borrar todo">
+  </form>
+</section>
+</main>
+
+
+<footer class="footerr">
+  <p>Seguinos en nuestras redes sociales!</p>
+  <ul>
+    <li><a href="https://instagram.com" target="_blank">Instagram MiCofii</a>
+      <li><a href="https://facebook.com" target="_blank">Facebook MiCofii</a>
+    </li>
+  </ul>
+  </footer>
+
+
+</body>
+</html>
