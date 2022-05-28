@@ -13,6 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -43,13 +44,13 @@
     <main>
       <div  class="grid-area">
       <section id="sectionn">
-              <div class="imagen-conteiner">
+              <div data-aos="fade-down" class="imagen-conteiner">
                 <div class="imagen-caja">
                   <img class="imagenportada" src="./img/combo capsulas.jpg" alt="combo">
                 </div>
             </div>
 </div>
-        <div class="h3h4index">
+        <div data-aos="fade-down" class="h3h4index">
           <!-- IMAGEN DEL H3 -->
           <div class="h3index">
             <h3>Cafe de la mejor selección.</h3>
@@ -95,7 +96,10 @@
                           <p>Cafesito aguado</p>
                         </div>
                         </div>
-
+                        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                        <script>
+                          AOS.init();
+                        </script>
             </section>
 
           <br>

@@ -9,7 +9,6 @@ body{
     font-family: 'Nunito Sans', sans-serif;
     color: black;
     border: 100px;
-    text-align: center;
 }
 
 nav{
@@ -240,67 +239,92 @@ nav{
 /* start(izq) end(der) y center(centro) space-between y evenly*//* solo para mas de 1 fila */
             
 
-.container {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-auto-columns: 10fr;
-    gap: 2px 2px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "mocaccino mocaccino capuchino capuchino"
-      "cortado cortado otro-gusto otro-gusto"
-      ". . . ."
-      ". . . .";
-  }
-  
-  .mocaccino { grid-area: mocaccino;
-padding-top: 30px;
-box-shadow: 7px 7px 15px #592A08;
-background-image: url(../img/mocaccino.jpg);
-background-size: cover; 
-color: white;}
+.container {/* aplicarlo desde el padre, como header o main etc */
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 300px;
+   /* row o column(linea o columna), wrap o nowrap, nos acercamos al tema del responsive */
+/* start(izq) end(der) y center(centro) space-between y evenly*//* solo para mas de 1 fila */
+}
+
+.container img {
+    border-style: solid;
+}
+
+  .mocaccino {
+    color: black;
+    color: white;
+    display: flex;
+    background: rgb(182, 182, 182);
+}
 
 .mocaccino img {
-    height: 20vh;
+    height: 22vh;
 }
+
   
-  .capuchino { grid-area: capuchino;
-    padding-top: 30px;
-    box-shadow: 7px 7px 15px #592A08;
-    background-image: url(../img/capuchino.jpg);
-    background-size: cover; 
-    color: white;
+.capuchino {
+    color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    background: rgb(182, 182, 182);
 }
 .capuchino img {
-    height: 20vh;
+    height: 22vh;
+    border-color: white;
 }
 
   
   
-  .cortado { grid-area: cortado;
-    padding-top: 30px;
-    box-shadow: 7px 7px 15px #592A08; 
-    background-image: url(../img/cafeteriaaa.jpg);
-    background-size: cover; 
-    color: white;
+.cortado {
+    color: rgb(255, 255, 255);
+    display: flex;
+    background: rgb(182, 182, 182);
 }
 .cortado img {
-        height: 20vh;
+        height: 22vh;
     
 }
   
-  .otro-gusto { grid-area: otro-gusto;
-    padding-top: 30px;
-    box-shadow: 7px 7px 15px #592A08;
-    background-image: url(../img/cafefriofondo.jpg);
-    background-size: cover; 
-    color: white;
+  .otro-gusto {
+    color: black;
+    display: flex;
+    background: rgb(182, 182, 182);
+    flex-direction: row-reverse;
 }
 
+
 .otro-gusto img{
-    height: 20vh;
+    height: 22vh;
+    border-color: white;
+}
+
+.parrafoscafe {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.tipodecafe {
+    font-size: 4vh;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom-width: 1px;
+    margin: 30px;
 }
   
+.descripcioncafes {
+    text-align: auto;
+    margin-bottom: 30px;
+}
     
     .footerr{
         margin-top: 500px;
@@ -500,4 +524,18 @@ color: white;}
                 flex-direction: row;
                 margin: 0 auto;
                 }
+
+                .container {/* aplicarlo desde el padre, como header o main etc */
+                    padding: 20px;
+                    display: flex;
+                    gap: 10px;
+                    height: auto;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-left: 0px;
+                   /* row o column(linea o columna), wrap o nowrap, nos acercamos al tema del responsive */
+                /* start(izq) end(der) y center(centro) space-between y evenly*//* solo para mas de 1 fila */
+                }
         }
+
