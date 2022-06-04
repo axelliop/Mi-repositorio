@@ -1,0 +1,73 @@
+
+  .mocaccino {
+    color: rgb(255, 255, 255);
+    display: flex;
+    background: rgb(110, 79, 41);
+
+    img {
+        height: 22vh;
+    }
+}
+
+.capuchino {
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row-reverse;
+    background: rgb(110, 79, 41);
+    img {
+        height: 22vh;
+        border-color: white;
+    }
+}
+
+.cortado {
+    color: rgb(255, 255, 255);
+    display: flex;
+    background: rgb(110, 79, 41);
+    img {
+        height: 22vh;
+    
+}
+}
+
+.otro-gusto {
+    color: rgb(255, 255, 255);
+    display: flex;
+    background: rgb(110, 79, 41);
+    flex-direction: row-reverse;
+    img{
+        height: 22vh;
+        border-color: white;
+    }
+}
+
+.parrafoscafe {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.tipodecafe {
+    font-size: 4vh;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom-width: 1px;
+    margin: 30px;
+}
+  
+.descripcioncafes {
+    text-align: auto;
+    margin-bottom: 30px;
+}
+
+.container {
+    padding-top: 30px;
+}
+
+
+
+
+
