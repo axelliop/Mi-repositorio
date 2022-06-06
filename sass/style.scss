@@ -207,17 +207,15 @@ padding-top: 20px;
     .comenzar{
         display: flex;
         justify-content: center;
-        height: 7vh;
+        height: auto;
         button {
             background: black;
             box-shadow: 7px 7px 15px #000000;
-            border-style: initial;
-            width: 13vh;
+            width: auto;
             border-radius: 10%;
 
         p{
     color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
     background: black;
     padding-top: 20px;
     font-size: 20px;

@@ -335,21 +335,19 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 7vh;
+  height: auto;
 }
 
 .comenzar button {
   background: black;
   -webkit-box-shadow: 7px 7px 15px #000000;
           box-shadow: 7px 7px 15px #000000;
-  border-style: initial;
-  width: 13vh;
+  width: auto;
   border-radius: 10%;
 }
 
 .comenzar button p {
   color: white;
-  background-color: black;
   background: black;
   padding-top: 20px;
   font-size: 20px;
