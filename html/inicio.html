@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="style.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MiCofii-Inicio</title>
-    <link rel="shortcut icon" href="../img/cafee.png" type="image/x-icon">
+    <title>Restaurante Coffii</title>
+    <link rel="shortcut icon" href="./img/cafee.png" type="image/x-icon">
     <link rel="stylesheet" href="../sass/style.css">
-    <!-- CSS only -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <!-- CSS only -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <!-- FOOOOOTEEEEER -->
@@ -21,77 +27,160 @@
 
 
 <!-- NAVBARRRRRRR -->
-<nav class="navbar navbar-expand-lg bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="../index.html">MiCoffii</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./inicio.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./cafes.html">Cafes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./contacto.html">Contacto</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./nosotros.html">Nosotros</a>
-        </li>
-        </li>
-      </ul>
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">MiCoffii</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./inicio.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./cafes.html">Cafes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                </li>
+                </li>
+              </ul>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+
+
+<!-- CARROUSEEEEEEL -->
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="../img/carro1.jpg" class="d-block w-100" alt="c1">
+    </div>
+    <div class="carousel-item">
+      <img src="../img/carro2.jpg" class="d-block w-100" alt="c2">
+    </div>
+    <div class="carousel-item">
+      <img src="../img/carro3.jpg" class="d-block w-100" alt="c3">
     </div>
   </div>
-</nav>
-
-<body>
-  <div class="h1inicio">
-<h1>Cafeteria Mi Coffii</h1>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
-<div class="iiframe">
-    <h2>Somos uno de las cafeterias mejor valoradas de todo Buenos aires, no solo ofrecemos cafes, sino que tambien ofrecemos momentos.</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/df3JeXVWYWA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<hr>
-<article>
-  <section>
-<table class="tablaa" border="2" cellpadding="5" cellspacing="5">
-    <tr>
-        <th>Amor</th>
-        <th>Sabor</th>
-        <th>Momentos</th>
-    </tr>
-        <td>100%</td>
-        <td>100%</td>
-        <td>100%</td>
-  </table>
-</section>
-</article>
-</main>
 
-          <!-- SCRIPPPPPTTTTT -->
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-        </body>
-        
-        <br>
-        <!-- FOOOOOOTEEEERRR -->
-        <div class="footer-basic">
-          <footer>
-              <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-              <ul class="list-inline">
-                  <li class="list-inline-item"><a href="#">Inicio</a></li>
-                  <li class="list-inline-item"><a href="#">Trabajo</a></li>
-                  <li class="list-inline-item"><a href="#">Locales</a></li>
-                  <li class="list-inline-item"><a href="#">Franquicias</a></li>
-              </ul>
-              <p class="copyright">MiCofii © 2022</p>
-          </footer>
+
+
+    <main>
+      <div  class="grid-area">
+      <section id="sectionn">
+              <div class="imagen-conteiner">
+                <div class="imagen-caja">
+                  <img class="imagenportada" src="../img/combo capsulas.jpg" alt="combo">
+                </div>
+            </div>
+</div>
+        <div class="h3h4index">
+          <!-- IMAGEN DEL H3 -->
+          <div class="h3index">
+            <h3>Cafe de la mejor selección.</h3>
+                </div>
+                <!-- IMAGEN DEL H4 -->
+                  <div class="h4index">
+                    <p>Granos cuidadosamente seleccionados.</p>
+                      </div>
+                    </div>
+                      <br>
+                      FADE
+                      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                          </ul>
+                          <div data-aos="fade-up">
+                          <div class="imagensitasindex">
+                            <div class="contenedorimagenes">
+                          <img src="../img/cafecolombiano.PNG" alt="prueba">
+                          <p>Granos Colombianos</p>
+                          
+                          <strong>$2400</strong>
+                        </div>
+
+                        
+                        <div class="contenedorimagenes">
+                          <img src="../img/machiatto.PNG" alt="prueba" class="imagenprueba">
+                          <p>CAJA MACHIATTO</p>
+                          
+                          <strong>$2400</strong>
+                        </div>
+
+                        <div class="contenedorimagenes">
+                          <img src="../img/nespresso.PNG" alt="prueba" class="imagenprueba">
+                          <p>50 Cápsulas NESPRESSO</p>
+                          
+                          <strong>$2400</strong>
+                        </div>
+
+                        <div class="contenedorimagenes">
+                          <img src="../img/avellana.PNG" alt="prueba" class="imagenprueba">
+                          <p>20 Cápsulas VAINILLA</p>
+                          
+                          <strong>$2400</strong>
+                        </div>
+
+                        <div class="contenedorimagenes">
+                          <img src="../img/moka.PNG" alt="prueba" class="imagenprueba">
+                          <p>20 Cápsulas MOKA</p>
+                          
+                          <strong>$2400</strong>
+                        </div>
+                          <div class="contenedorimagenes">
+                          <img src="../img/colombiano.PNG" alt="prueba" class="imagenprueba">
+                          <p>20 Cápsulas COLOMBIA</p>
+                          
+                          <strong>$2400</strong>
+                        </div>
+
+                      </div>
+
+            </section>
+
+          <br>
+
+  </main>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+
+<br>
+<!-- FOOOOOOTEEEERRR -->
+<div class="footer-basic">
+  <footer>
+      <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+      <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Inicio</a></li>
+          <li class="list-inline-item"><a href="#">Trabajo</a></li>
+          <li class="list-inline-item"><a href="#">Locales</a></li>
+          <li class="list-inline-item"><a href="#">Franquicias</a></li>
+      </ul>
+      <p class="copyright">MiCofii © 2022</p>
+  </footer>
+</div>
+</div>
+
 
     
-</body>
 </html>
