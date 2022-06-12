@@ -321,6 +321,7 @@ body {
   margin: 0 auto;
   text-align: center;
   color: white;
+  background-position: center;
 }
 
 #header h1 {
@@ -355,7 +356,215 @@ body {
   border-radius: 10%;
 }
 
-@media only screen and (max-width: 600px) {
+.historia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.historia h1 {
+  color: #6e4f29;
+}
+
+.alcentro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containernosotros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 30px;
+}
+
+.cafeviejo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #592A08;
+  color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.cafeviejo h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  border-style: solid;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom-width: 1px;
+  margin: 10px;
+}
+
+.listadesordenada {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-size: 4vh;
+}
+
+/* CONTACTOOOOOOO HTML */
+.almediocontacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.almediocontacto .h1contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #592A08;
+}
+
+.almediocontacto .formulario {
+  margin-top: 50px;
+  border-style: inherit;
+  background-image: url(../img/cafeteriaaa.jpg);
+  padding: 25px;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  color: #af6d0a;
+  width: 80%;
+  -webkit-box-shadow: 0 0 10px #000000;
+          box-shadow: 0 0 10px #000000;
+  font-size: 2vh;
+}
+
+/* MIXIN */
+.boton, .boton--marron {
+  display: inline-block;
+  padding: 10px;
+  /* SE INCLUYE TODO LO QUE CONTENGA @include boton; */
+  border: 1px solid #333;
+  background-color: #592A08;
+  border-radius: 30%;
+  color: white;
+}
+
+/* EXTEND */
+.boton, .boton--marron {
+  display: inline;
+  width: 200px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.boton--marron {
+  /* basicamente se extiende y anida todo lo que tenga @extend .boton */
+  background-color: #b69835;
+  color: white;
+}
+
+/* MAPS */
+/* nombre aplica a lo que le pongo antes (adentro del id nombre asi se generan las clases en el css. , valor corresponde a los colores, blue skyblue pro ej. en $botones que corresponde a la variable que aplicara esto */
+.icon-azul {
+  color: blue;
+}
+
+/* nombre aplica a lo que le pongo antes (adentro del id nombre asi se generan las clases en el css. , valor corresponde a los colores, blue skyblue pro ej. en $botones que corresponde a la variable que aplicara esto */
+.icon-cielo {
+  color: skyblue;
+}
+
+/* nombre aplica a lo que le pongo antes (adentro del id nombre asi se generan las clases en el css. , valor corresponde a los colores, blue skyblue pro ej. en $botones que corresponde a la variable que aplicara esto */
+.icon-violeta {
+  color: violet;
+}
+
+/* nombre aplica a lo que le pongo antes (adentro del id nombre asi se generan las clases en el css. , valor corresponde a los colores, blue skyblue pro ej. en $botones que corresponde a la variable que aplicara esto */
+.icon-celeste {
+  color: lightblue;
+}
+
+/* nombre aplica a lo que le pongo antes (adentro del id nombre asi se generan las clases en el css. , valor corresponde a los colores, blue skyblue pro ej. en $botones que corresponde a la variable que aplicara esto */
+.icon-violetazulado {
+  color: blueviolet;
+}
+
+.coloresss {
+  background: #dedede;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px) {
   .imagen-conteiner {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -428,6 +637,17 @@ body {
     width: 13vh;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .listadesordenada {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    font-size: 3vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

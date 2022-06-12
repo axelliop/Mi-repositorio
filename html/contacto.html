@@ -47,9 +47,9 @@
 </nav>
 
 <body>
-    <main>
-  <h1>Nos interesa saber sobre vos!</h1>
-<section>
+    <main class="almediocontacto" >
+  <h1 class="h1contacto">Nos interesa saber sobre vos!</h1>
+<section class="formulario">
 <form action="enviar.php" method="get" enctype="text/plain">
 
     <div> 
@@ -76,12 +76,7 @@
         <textarea name="comentarios" id="comentarios" cols="30" rows="5" placeholder="Que opinas de nosotros?"></textarea>
     
     </div>
-    <br>
-    <label for="">Estado civil?</label>
-    <input type="radio" name="civil" value="2"> Soltero
-    <input type="radio" name="civil" value="3"> Viudo
-    <input type="radio" name="civil" value="1"> Casado
-    <br>
+  
     <div><!-- Checkbox es para tildar opciones, mas de 1-->
         <label for="">Acepto ter. y Cond.</label>
         <input type="checkbox" id="acepto">
@@ -89,10 +84,14 @@
         <input type="checkbox" id="news">
     </div>
     <br>
-    <input type="submit" value="Enviar ahora"> 
-    <input type="reset" value="borrar todo">
+    <input class="boton" type="submit" value="Enviar ahora"> 
+    <input class="boton" type="reset" value="borrar todo"> <!-- aca se aplico el mixin -->
+    <input class="boton--marron" type="submit" value="Aceptar cond."> <!-- aca se aplico el extend -->
   </form>
 </section>
+<div class="coloresss"><h2>ACA APLICO EL GET MAP</h2></div>
+
+
 </main>
 
           <!-- SCRIPPPPPTTTTT -->

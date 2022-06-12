@@ -1,5 +1,6 @@
 @import "cafes";
 
+
 * {
     box-sizing: border-box;
     margin: 0%;
@@ -198,6 +199,7 @@ padding-top: 20px;
     margin: 0 auto;
     text-align: center;
     color: white;
+    background-position: center;
         h1 {
             font-size: 13vh;
             color: white;
@@ -225,9 +227,160 @@ padding-top: 20px;
 }
 }
 
+//NOSOTROS HTML
+
+.historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        color: rgb(110, 79, 41);
+    }
+}
+
+.alcentro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containernosotros {  
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+  }
+  
+  .cafeviejo {
+      display: flex;
+background-color: #592A08;
+color: white;
+flex-direction: column;
+justify-content:flex-start;
+margin-bottom: 30px;
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-style: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom-width: 1px;
+    margin: 10px;
+}
+}
+.listadesordenada {
+     display: flex;
+    flex-direction: column;
+    text-align: center;
+font-size: 4vh;
+}
+
+/* CONTACTOOOOOOO HTML */
 
 
-@media only screen and (max-width: 600px) {
+.almediocontacto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    .h1contacto{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        color:#592A08;
+
+    }
+
+    .formulario {
+        margin-top: 50px;
+        border-style:inherit;
+        background-image: url(../img/cafeteriaaa.jpg);    
+        padding: 25px;
+        align-items: top;
+        justify-content: space-evenly;
+        display: flex;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+        color: rgb(175, 109, 10);
+        width: 80%;
+        box-shadow: 0 0 10px #000000;
+        font-size: 2vh;
+    }
+}
+
+/* MIXIN */
+@mixin boton {
+    display: inline-block;
+    padding: 10px;  /* SE INCLUYE TODO LO QUE CONTENGA @include boton; */
+    border: 1px solid #333;
+}
+.boton {
+    @include boton;
+    background-color: #592A08;
+    border-radius: 30%;
+    color: white;
+}
+
+
+/* EXTEND */
+.boton {
+    display: inline;
+    width: 200px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    font-weight: 700;
+}
+.boton--marron {
+    @extend .boton; /* basicamente se extiende y anida todo lo que tenga @extend .boton */
+    background-color: rgb(182, 152, 53);
+    color: white;
+}
+
+/* MAPS */
+$botones: (
+    azul: blue,
+    cielo: skyblue,
+    violeta: violet,
+    celeste: lightblue,
+    violetazulado: blueviolet
+);
+
+@each $nombre, $valor in $botones { /* nombre aplica a lo que le pongo antes (adentro del id #{nombre} asi se generan las clases en el css. , valor corresponde a los colores, blue skyblue pro ej. en $botones que corresponde a la variable que aplicara esto */
+    .icon-#{$nombre} {
+        color: $valor;
+    }
+}
+
+$colores: (
+    base: #000,
+    principal: #ff0000,
+    fondo: #dedede
+);
+.coloresss {
+    background: map-get($colores, fondo);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
     .imagen-conteiner{
         padding-top: 30px;
         padding-bottom: 30px;
@@ -298,5 +451,12 @@ padding-top: 20px;
             object-fit: cover;
         }
     }
+
+    .listadesordenada {
+        display: flex;
+       flex-direction: column;
+       text-align: center;
+   font-size: 3vh;
+   }
 }
 
