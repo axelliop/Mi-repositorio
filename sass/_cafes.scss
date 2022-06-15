@@ -1,4 +1,11 @@
 
+.cafeencabezado {
+    display: flex;
+    justify-content: center;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
   .mocaccino {
     color: rgb(255, 255, 255);
     display: flex;
@@ -65,8 +72,24 @@
 }
 
 .container {
-    padding-top: 30px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-size: cover;
+background-position: center;
+flex-direction: column;
+text-align: center;
+box-shadow:
+rgba(white, 0.2) 0 0 40px 5px,
+rgba(white, 1) 0 0 0 1px,
+rgba(black, 0.66) 0 30px 60px 0,
+inset rgb(88, 60, 17) 0 0 0 5px,
+inset white 0 0 0 6px;
+transform-style: preserve-3d;
+opacity: 1;
+background: rgb(110, 79, 41);
 }
+
+
 
 
 

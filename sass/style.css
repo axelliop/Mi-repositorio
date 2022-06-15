@@ -1,3 +1,14 @@
+.cafeencabezado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
 .mocaccino {
   color: white;
   display: -webkit-box;
@@ -87,7 +98,21 @@
 }
 
 .container {
-  padding-top: 30px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-size: cover;
+  background-position: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #583c11 0 0 0 5px, inset white 0 0 0 6px;
+          box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #583c11 0 0 0 5px, inset white 0 0 0 6px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  opacity: 1;
+  background: #6e4f29;
 }
 
 * {
@@ -405,7 +430,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(../img/fondocafeee2.jpg);
+  background-image: url(../img/imagen.PNG);
   color: black;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -420,9 +445,12 @@ body {
   background-position: center;
   flex-direction: column;
   text-align: center;
-  color: black;
-  -webkit-box-shadow: 0 0 10px #000000;
-          box-shadow: 0 0 10px #000000;
+  color: white;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #583c11 0 0 0 5px, inset white 0 0 0 6px;
+          box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #583c11 0 0 0 5px, inset white 0 0 0 6px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  opacity: 1;
 }
 
 .cafeviejo h2 {
@@ -451,7 +479,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  font-size: 4vh;
+  font-size: 2vh;
 }
 
 /* CONTACTOOOOOOO HTML */
@@ -499,7 +527,6 @@ body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -513,6 +540,16 @@ body {
           box-shadow: 0 0 10px #000000;
   font-size: 2vh;
   font-weight: 700;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  text-align: center;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #583c11 0 0 0 5px, inset white 0 0 0 6px;
+          box-shadow: rgba(255, 255, 255, 0.2) 0 0 40px 5px, white 0 0 0 1px, rgba(0, 0, 0, 0.66) 0 30px 60px 0, inset #583c11 0 0 0 5px, inset white 0 0 0 6px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  opacity: 1;
+  background: #6e4f29;
 }
 
 /* MIXIN */
