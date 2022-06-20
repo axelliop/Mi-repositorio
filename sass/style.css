@@ -7,6 +7,7 @@
           justify-content: center;
   padding-top: 2vh;
   padding-bottom: 2vh;
+  color: #6e4f29;
 }
 
 .mocaccino {
@@ -347,13 +348,13 @@ body {
           flex-direction: column;
   margin: 0 auto;
   text-align: center;
-  color: black;
+  color: #583c11;
   background-position: center;
 }
 
 #header h1 {
   font-size: 13vh;
-  color: black;
+  color: #583c11;
 }
 
 .comenzar {
@@ -571,6 +572,57 @@ body {
   border: 1px solid #000;
   border-radius: 15px;
   font-weight: 500;
+}
+
+/* CONTACTO PAGINA */
+.inputemail {
+  border-style: inset;
+  background: #6e4f29;
+  border-style: inset;
+  border-color: white;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.inputnombre {
+  background: #6e4f29;
+  border-style: inset;
+  border-color: white;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.inputapellido {
+  background: #6e4f29;
+  border-style: inset;
+  border-color: white;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.inputfecha {
+  border-style: inset;
+  border-color: white;
+  background: white;
+  opacity: 0.5;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+
+.nombre {
+  margin: 2vh;
+}
+
+.apellido {
+  margin: 2vh;
+}
+
+.email {
+  margin: 2vh;
+}
+
+.fecha {
+  margin: 2vh;
 }
 
 @media only screen and (max-width: 768px) {

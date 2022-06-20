@@ -199,11 +199,11 @@ margin-bottom: 40px;
     flex-direction: column;
     margin: 0 auto;
     text-align: center;
-    color: black;
+    color: rgb(88, 60, 17);
     background-position: center;
         h1 {
             font-size: 13vh;
-            color: black;
+            color: rgb(88, 60, 17);
 }
 }
 
@@ -373,6 +373,51 @@ font-size: 2vh;
     font-weight: 500;
 }
 
+/* CONTACTO PAGINA */
+
+.inputemail {
+    border-style:inset;
+background: rgb(110, 79, 41);
+border-style:inset;
+border-color: white;
+border:none;
+border-bottom:1px solid #ffffff;}
+
+.inputnombre {    background: rgb(110, 79, 41);
+    border-style:inset;
+    border-color: white;
+    border:none;
+border-bottom:1px solid #ffffff;}
+
+.inputapellido {
+    background: rgb(110, 79, 41);
+    border-style:inset;
+    border-color: white;
+    border:none;
+border-bottom:1px solid #ffffff;
+
+}
+
+.inputfecha {
+    border-style:inset;
+    border-color: white;
+background: rgb(255, 255, 255);
+opacity:0.5;
+border:none;
+border-bottom:1px solid #757575;}
+
+.nombre {
+    margin: 2vh;
+}
+.apellido {
+    margin: 2vh;
+}
+.email {
+    margin: 2vh;
+}
+.fecha {
+    margin: 2vh;
+}
 
 
 

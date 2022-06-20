@@ -54,26 +54,26 @@
 <section class="formulario">
 <form action="enviar.php" method="get" enctype="text/plain">
 
-    <div> 
+    <div class="nombre"> 
         <label for="Nombre">Nombre:</label>
-        <input type="text" id="Nombre" placeholder="Ingrese su nombre"> <!-- Recibir informacion -->
+        <input type="text" id="Nombre" placeholder="Ingrese su nombre" class="inputnombre"> <!-- Recibir informacion -->
     </div>
-    <br>
-    <div>
-        <label for="Apellido">Apellido</label>
-        <input type="text" id="Apellido" placeholder="Apellido">
-        <br>
-        <br>
-    <div>
-        <label for="email">Email</label> 
-        <input type="text" id="email" placeholder="Email">
+    <!--  -->
+    <div class="apellido">
+        <label for="Apellido">Apellido:</label>
+        <input type="text" id="Apellido" placeholder="Apellido" class="inputapellido">
+        <!-- MODIFICAR -->
+        
+    <div class="email"> 
+        <label for="email">Email:</label> 
+        <input type="text" id="email" placeholder="Email" class="inputemail">
     </div>
-    <br>
-    <div>
-        <label for="date">Fecha de nacimiento</label>
-        <input type="date" id="date">
+   <!-- MODIFICAR -->
+    <div class="fecha">
+        <label for="date">Fecha de nacimiento:</label>
+        <input type="date" id="date" class="inputfecha">
     </div>
-    <br>
+    <!-- MODIFICAR -->
     <div>
         <textarea name="comentarios" id="comentarios" cols="30" rows="5" placeholder="Que opinas de nosotros?"></textarea>
     
@@ -87,7 +87,7 @@
     </div>
     <br>
     <input class="boton" type="submit" value="Enviar ahora"> 
-    <input class="boton" type="reset" value="borrar todo"> <!-- aca se aplico el mixin --><!-- aca se aplico el extend -->
+    <input class="boton" type="reset" value="Borrar todo"><!-- aca se aplico el extend -->
   </form>
 </section>
 
