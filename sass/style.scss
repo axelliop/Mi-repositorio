@@ -477,10 +477,15 @@ border-bottom:1px solid #757575;}
 
     /* fijarme esto para que el texto quede bien con las cajas */
     .imagensitasindex {
+        display: flex;
+        flex-direction: column;
         width: 100%;
         height: auto;
+        align-items: center;
+        justify-content: space-between;
         p{
         font-size: 11px;
+    
         }
     }
 
